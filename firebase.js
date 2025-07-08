@@ -1,8 +1,8 @@
 // Firebase configuration for login and signup
 const loginFirebaseConfig = {
-    apiKey: "AIzaSyCFHMxivqGerOX7zxd5OjViREDJx2xA4cE",
-    authDomain: "loginform-81d1a.firebaseapp.com",
-    databaseURL: "https://loginform-81d1a-default-rtdb.firebaseio.com",
+    apiKey: "",
+    authDomain: "",
+    databaseURL: "",
     projectId: "loginform-81d1a",
     storageBucket: "loginform-81d1a.appspot.com",
     messagingSenderId: "1017809985435",
@@ -10,9 +10,9 @@ const loginFirebaseConfig = {
 };
 
 const signupFirebaseConfig = {
-    apiKey: "AIzaSyAnsR42as7q87vyiV52Ri_j4NiYSgJy6cw",
-    authDomain: "signupform-e99f4.firebaseapp.com",
-    databaseURL: "https://signupform-e99f4-default-rtdb.firebaseio.com",
+    apiKey: "",
+    authDomain: "",
+    databaseURL: "",
     projectId: "signupform-e99f4",
     storageBucket: "signupform-e99f4.appspot.com",
     messagingSenderId: "732176707214",
