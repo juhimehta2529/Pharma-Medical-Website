@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!--link for css file-->
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <!--Library-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!--header-->
+    <header class="header">
+        <a href="https://pharmeasy.in/#" class="logo">
+            <img src="logo.png">
+        </a>
+
+    <!--nav bar-->
+    <nav class="headbar">
+        <a href="home.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="doctor.html">Doctors</a>
+        <a href="https://pharmeasy.in/online-medicine-order?src=homecard">Medicine</a>
+        <a href="service.html">Service</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <!--nav bar-->
+
+    <div class="menubtn">
+        <button class="button" onclick="window.location.href='https://kapurthala.gov.in/emergency-helpline-numbers/'">Helpline</button>
+    </div>
+    </header>
+<!--header-->
+
+<!--form-->
+<div class="container" id="container">
+    <!--sign up-->
+    <div id="signupMessage"></div>
+    <div class="form sign-up-container">
+        <form id="signupForm" action="/signup">
+            <h1>Create An Account</h1>
+
+            <!--icons-->
+                <div class="social-container">
+                <a href="https://www.instagram.com/medical.doctors/" class="social"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://support.google.com/business/answer/9798848?hl=en" class="social"><i class="fa fa-google" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/company/spire-occupational-health/" class="social"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </div>
+            <!--icons-->
+
+            <span>Or use your email for registration</span>
+
+            <!--input field-->
+            <div class="input-field">
+                <i class="fa fa-user"></i>
+                <input type="text" id="name" placeholder="Username">
+            </div>
+
+            <div class="input-field">
+                <i class="fa fa-envelope"></i>
+                <input type="email" id="emailid" placeholder="Email">
+            </div>
+
+            <div class="input-field">
+                <i class="fa fa-lock"></i>
+                <input type="password" id="password" placeholder="Password">
+            </div>
+            <!--input field-->
+
+            <button class="button" onclick="window.location.href='https://kapurthala.gov.in/emergency-helpline-numbers/'">Sign Up</button>
+
+
+        </form>
+    </div>
+    <!--sign up-->
+
+
+    <!--sign in-->
+    <div class="form sign-in-container">
+        <form id="loginForm" action="/login">
+            <div class="alert">Your message sent</div>
+            <h1>Login</h1>
+
+            <!--icons-->
+                <div class="social-container">
+                <a href="https://www.instagram.com/medical.doctors/" class="social"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://support.google.com/business/answer/9798848?hl=en" class="social"><i class="fa fa-google" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/company/spire-occupational-health/" class="social"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </div>
+            <!--icons-->
+
+            <span>or use your account </span>
+
+            <!--input field-->
+            <div class="input-field">
+                <i class="fa fa-user"></i>
+                <input type="text" id="username" placeholder="Username">
+            </div>
+
+            <div class="input-field">
+                <i class="fa fa-lock"></i>
+                <input type="password" id="userpass" placeholder="Password">
+            </div>
+            <!--input field-->
+            <a href="#">Forgot your password </a>
+            <button type="submit">Sign In</button>
+        </form>
+    </div>
+    <!--sign in-->
+
+    <!--overlay-->
+    <div class="overlay-container">
+        <div class="overlay">
+            <div class="overlay-panel overlay-left">
+                <h1>Welcome Back!</h1>
+                <p>To keep connected with us please login with your personal info</p>
+                <img src="s1.png" style="height: 25rem; width:30rem; padding-top:5%;">
+                <button class="btn" id="signIn">Sign in</button>
+            </div>
+
+            <div class="overlay-panel overlay-right">
+                <h1>Hello User!</h1>
+                <p>Enter your personal details and start your journey with us</p>
+                <img src="s3.png" style="height: 25rem; width:30rem;">
+                <button class="btn" id="signUp">Sign up</button>
+            </div>
+        </div>
+    </div>
+    <!--overlay-->
+</div>
+<!--form-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+<script src="./login.js"></script>
+
+
+<script>
+    const signUpButton=document.getElementById('signUp');
+    const signInButton=document.getElementById('signIn');
+    const container=document.getElementById('container');
+
+    signUpButton.addEventListener('click',()=>{
+        container.classList.add("right-panel-active");
+    });
+
+    signInButton.addEventListener('click',()=>{
+        container.classList.remove("right-panel-active");
+    });
+</script>
+
+
+</body>
+</html>
